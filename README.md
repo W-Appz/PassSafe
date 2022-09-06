@@ -1,7 +1,7 @@
 # Password Vault
 <i>A safekeeping for all your passwords.</i>
 
-![GitHub All Releases](https://img.shields.io/github/downloads/W-Laboratories/PasswordVault)
+![GitHub All Releases](https://img.shields.io/github/downloads/W-Laboratories/PasswordVault/total)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/W-Laboratories/PasswordVault)
 ![GitHub last commit](https://img.shields.io/github/last-commit/W-Laboratories/PasswordVault)
 
