@@ -5,6 +5,9 @@
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/W-Laboratories/PasswordVault)
 ![GitHub last commit](https://img.shields.io/github/last-commit/W-Laboratories/PasswordVault)
 
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/W-Laboratories/PasswordVault)](https://github.com/W-Laboratories/PasswordVault/releases/tag/v1.0-beta)
+![GitHub Release Date](https://img.shields.io/github/release-date/W-Laboratories/PasswordVault)
+
 ![GitHub license](https://img.shields.io/github/license/W-Laboratories/PasswordVault)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
