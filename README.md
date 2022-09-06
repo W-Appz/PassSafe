@@ -28,9 +28,25 @@ Want to be safe online but too many passwords to remember? Do not fear, the pass
 
 ## How to install?
 
-Download APK here:
-<a href="https://github.com/W-Laboratories/PasswordVault/tree/master/releases/apk"><img src="github.png" alt="Download from Github icon" width="200"/></a>
-Google Play:
-# Coming Soon
-App Store:
-# Coming Soon
+### Download APK here ### <br>
+<a href="https://github.com/W-Laboratories/PasswordVault/tree/master/releases/apk"><img src="github.png" alt="Download from Github icon" width="200"/></a> <br>
+### Google Play ### <br>
+Coming Soon!
+### App Store ###
+Coming Soon!
+
+## Snapshots
+Snapshots of the app are available in /snapshots. Feel free to take a look!
+
+## How to contribute?
+### Bug reports:
+Please create an issue with as much details as possible. Also look at the [guidelines](https://github.com/W-Laboratories/PasswordVault/blob/master/GUIDELINES.md#guidelines-for-creating-an-issue) for creating an issue.
+
+### Ideas/Feature Requests:
+Ideas for improvement and feature requests are always welcome. Please post them in the [Feature requests]https://github.com/W-Laboratories/PasswordVault/discussions/categories/feature-requests) category under Discussions.
+
+### Questions:
+I will try to answer all questions and help you in using this app. Please post your questions in the [Q&A category](https://github.com/W-Laboratories/PasswordVault/discussions/categories/q-a) under Discussions.
+
+### Forking and Pull Requests:
+I appreciate people forking this repository and putting in their bit to improve it. Please follow the [guidelines]((https://github.com/W-Laboratories/PasswordVault/blob/master/GUIDELINES.mdd#guidelines-for-forking-and-creating-pull-requests) for forking and creating pull requests.
