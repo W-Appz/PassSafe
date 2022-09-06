@@ -43,7 +43,7 @@ Snapshots of the app are available in /snapshots. Feel free to take a look!
 Please create an issue with as much details as possible. Also look at the [guidelines](https://github.com/W-Laboratories/PasswordVault/blob/master/GUIDELINES.md#guidelines-for-creating-an-issue) for creating an issue.
 
 ### Ideas/Feature Requests:
-Ideas for improvement and feature requests are always welcome. Please post them in the [Feature requests]https://github.com/W-Laboratories/PasswordVault/discussions/categories/feature-requests) category under Discussions.
+Ideas for improvement and feature requests are always welcome. Please post them in the [Feature requests](https://github.com/W-Laboratories/PasswordVault/discussions/categories/feature-requests) category under Discussions.
 
 ### Questions:
 I will try to answer all questions and help you in using this app. Please post your questions in the [Q&A category](https://github.com/W-Laboratories/PasswordVault/discussions/categories/q-a) under Discussions.
