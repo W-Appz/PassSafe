@@ -26,9 +26,11 @@ Want to be safe online but too many passwords to remember? Do not fear, the pass
 7. Actively maintained app
 8. Bug reports will be worked upon with high priority
 
-## Screenshots:
-<img src="snapshots/screenshot (1).jpg" width="100" height="193" />>
-
 ## How to install?
 
+Download APK here:
 <a href="https://github.com/W-Laboratories/PasswordVault/tree/master/releases/apk"><img src="github.png" alt="Download from Github icon" width="200"/></a>
+Google Play:
+# Coming Soon
+App Store:
+# Coming Soon
