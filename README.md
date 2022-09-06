@@ -49,4 +49,4 @@ Ideas for improvement and feature requests are always welcome. Please post them 
 I will try to answer all questions and help you in using this app. Please post your questions in the [Q&A category](https://github.com/W-Laboratories/PasswordVault/discussions/categories/q-a) under Discussions.
 
 ### Forking and Pull Requests:
-I appreciate people forking this repository and putting in their bit to improve it. Please follow the [guidelines](https://github.com/W-Laboratories/PasswordVault/blob/master/GUIDELINES.mdd#guidelines-for-forking-and-creating-pull-requests) for forking and creating pull requests.
+I appreciate people forking this repository and putting in their bit to improve it. Please follow the [guidelines](https://github.com/W-Laboratories/PasswordVault/blob/master/GUIDELINES.md#guidelines-for-forking-and-creating-pull-requests) for forking and creating pull requests.
