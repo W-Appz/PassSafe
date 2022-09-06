@@ -23,4 +23,4 @@ Want to be safe online but too many passwords to remember? Do not fear, the pass
 
 ## How to install?
 
-<a href="https://github.com/W-Laboratories/PasswordVault/releases/apk/v1.0"><img src="github.png" alt="Download from Github icon" width="200"/></a>
+<a href="https://github.com/W-Laboratories/PasswordVault/tree/master/releases/apk"><img src="github.png" alt="Download from Github icon" width="200"/></a>
