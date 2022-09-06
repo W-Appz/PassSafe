@@ -27,7 +27,7 @@ Want to be safe online but too many passwords to remember? Do not fear, the pass
 8. Bug reports will be worked upon with high priority
 
 ## Screenshots:
-<img src="snapshots/screenshots (1).jpg">
+<img src="snapshots/screenshot (1).jpg">
 
 ## How to install?
 
