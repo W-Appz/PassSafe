@@ -26,6 +26,9 @@ Want to be safe online but too many passwords to remember? Do not fear, the pass
 7. Actively maintained app
 8. Bug reports will be worked upon with high priority
 
+## Snapshots
+Snapshots of the app are available in /snapshots. Feel free to take a look!
+
 ## How to install?
 
 ### Download APK here
@@ -34,9 +37,6 @@ Want to be safe online but too many passwords to remember? Do not fear, the pass
 <i>Coming Soon!</i>
 ### App Store
 <i> Coming Soon! </i>
-
-## Snapshots
-Snapshots of the app are available in /snapshots. Feel free to take a look!
 
 ## How to contribute?
 ### Bug reports:
