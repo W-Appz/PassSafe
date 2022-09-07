@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Ike's Password Vault"
+rootProject.name = "PassSafe"
 include ':app'
