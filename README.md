@@ -5,7 +5,7 @@
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/W-Appz/PassSafe)
 ![GitHub last commit](https://img.shields.io/github/last-commit/W-Appz/PassSafe)
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/W-Appz/PassSafe)](https://github.com/W-Appz/PassSafe/releases/tag/v1.0-beta)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/W-Appz/PassSafe)](https://github.com/W-Appz/PassSafe/releases/latest)
 ![GitHub Release Date](https://img.shields.io/github/release-date/W-Appz/PassSafe)
 
 ![GitHub license](https://img.shields.io/github/license/W-Appz/PassSafe)
