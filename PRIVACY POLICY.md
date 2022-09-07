@@ -7,6 +7,6 @@ I know how irritating it is when apps collect your data without your knowledge, 
 If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email and I will surely try to fix it/help you.
 
 Yours sincerely,  
-Wrichik Basu.  
-Kolkata, India.  
-basulabs.developer@gmail.com
+Ike.  
+Singapore.  
+ikebusinessoff@gmail.com
