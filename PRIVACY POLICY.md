@@ -8,5 +8,5 @@ If you find any security vulnerability that has been inadvertently caused by me,
 
 Yours sincerely,
 Ike Lim
-W Laboratories
+W Appz
 ikebusinessoff@gmail.com
