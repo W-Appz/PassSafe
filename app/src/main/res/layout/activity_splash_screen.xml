@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wlaboratories.PasswordVault.splashScreen"
+    tools:context="com.WAppz.PassSafe.splashScreen"
     android:background="@drawable/splashscreen"
     android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     android:id="@+id/splashS">

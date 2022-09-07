@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.wlaboratories.PasswordVault">
+    package="com.WAppz.PassSafe">
 
     <application
         android:allowBackup="true"
@@ -14,25 +14,25 @@
         android:theme="@style/Theme.IkesPasswordVault"
         tools:targetApi="31">
         <activity
-            android:name=".accountSettings"
+            android:name="com.WAppz.PassSafe.accountSettings"
             android:exported="false" />
         <activity
-            android:name=".individualPass"
+            android:name="com.WAppz.PassSafe.individualPass"
             android:exported="false" />
         <activity
-            android:name=".addPass"
+            android:name="com.WAppz.PassSafe.addPass"
             android:exported="false" />
         <activity
-            android:name=".mainpage"
+            android:name="com.WAppz.PassSafe.mainpage"
             android:exported="true"/>
 
         <activity
-            android:name=".login"
+            android:name="com.WAppz.PassSafe.login"
             android:exported="false" />
         <activity
-            android:name=".signup"
+            android:name="com.WAppz.PassSafe.signup"
             android:exported="false" />
-        <activity android:name=".splashScreen"
+        <activity android:name="com.WAppz.PassSafe.splashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             android:windowSoftInputMode="adjustPan">

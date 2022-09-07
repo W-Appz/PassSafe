@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wlaboratories.PasswordVault.login">
+    tools:context="com.WAppz.PassSafe.login">
 
     <EditText
         android:id="@+id/password_login"
