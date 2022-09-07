@@ -14,7 +14,7 @@
 ![Minimum SDK version](https://img.shields.io/badge/minimum%20sdk%20version-Lollipop%20(API%2021)-brightgreen)
 ![Target SDK version](https://img.shields.io/badge/target%20SDK%20version-Android%2012%20(API%2032)-brightgreen)
 
-Want to be safe online but too many passwords to remember? Do not fear, the password vault is here!
+Want to be safe online but too many passwords to remember? PassSafe is here!
 
 ## Features:
 1. Works offline
