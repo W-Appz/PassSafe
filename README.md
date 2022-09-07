@@ -32,7 +32,7 @@ Snapshots of the app are available in /snapshots. Feel free to take a look!
 ## How to install?
 
 ### Download APK here
-<a href="https://github.com/W-Appz/PassSafe/tree/master/releases/apk"><img src="github.png" alt="Download from Github icon" width="200"/></a> <br>
+<a href="https://github.com/W-Appz/PassSafe/releases/latest"><img src="github.png" alt="Download from Github icon" width="200"/></a> <br>
 ### Google Play
 <i>Coming Soon!</i>
 ### App Store
