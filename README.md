@@ -1,4 +1,4 @@
-# Password Vault
+# PassSafe
 <i>A safekeeping for all your passwords.</i>
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/W-Appz/PasswordVault/total)
