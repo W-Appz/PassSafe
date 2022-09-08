@@ -21,6 +21,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import net.zetetic.database.sqlcipher.SQLiteDatabase;
+
+import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -70,14 +73,23 @@ public class vault_page extends Fragment implements View.OnClickListener {
     public static vaultAdapter vAdapter;
     public static RecyclerView vaultlst;
     public static DBHelper DB;
+    public static File dbPath;
     FloatingActionButton add;
+
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        System.loadLibrary("sqlcipher");
+        dbPath = getContext().getDatabasePath(DBHelper.dbName);
+        SQLiteDatabase DBfile = SQLiteDatabase.openOrCreateDatabase(dbPath,signup.code1,null,null,null);
+
         DB = new DBHelper(getContext());
+        try {
+            DB.onCreate(DBfile);
+        } catch (Exception e) {}
         Cursor res = DB.getdata();
         if (res.getCount() != 0) {
             while (res.moveToNext()) {
@@ -126,7 +138,6 @@ public class vault_page extends Fragment implements View.OnClickListener {
            }
        });
     }
-
     @Override
     public void onClick(View v) {
         Intent i = new Intent(getContext(), addPass.class);

@@ -15,6 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class signup extends AppCompatActivity {
+    public static String code1;
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class signup extends AppCompatActivity {
         EditText hint_input = findViewById(R.id.pass_hint);
 
         signupbutton.setOnClickListener(view -> {
-            String code1 = password_input1.getText().toString();
+            code1 = password_input1.getText().toString();
             String code2 = password_input2.getText().toString();
             String hint = hint_input.getText().toString();
             if (code1.equals("") || code2.equals("")) {
