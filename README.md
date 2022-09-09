@@ -28,7 +28,7 @@ Want to be safe online but too many passwords to remember? Do not fear, PassSafe
 8. Bug reports will be worked upon with high priority
 
 ## Snapshots
-Snapshots of the app are available in /snapshots. Feel free to take a look!
+Snapshots of the app are available in [/snapshots](https://github.com/W-Appz/PassSafe/tree/master/snapshots). Feel free to take a look!
 
 ## How to install?
 
