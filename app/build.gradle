@@ -9,9 +9,9 @@ android {
         applicationId "com.WAppz.PassSafe"
         minSdk 21
         targetSdk 32
-        versionCode 1
+        versionCode 3
         versionName "1.0.1"
-
+        ndkVersion "21.3.6528147"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -19,6 +19,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                debugSymbolLevel 'SYMBOL_TABLE'
+            }
         }
     }
     compileOptions {
@@ -45,5 +48,4 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation 'net.zetetic:sqlcipher-android:4.5.2@aar'
     implementation 'androidx.sqlite:sqlite:2.1.0'
-
 }
