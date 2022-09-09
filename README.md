@@ -24,6 +24,7 @@ Want to be safe online but too many passwords to remember? Do not fear, PassSafe
 5. Built-in hashing system
 6. Easy to manage and maneuver
 7. Actively maintained app
+8. Uses secure [256-bit AES encryption]([guidelines](https://www.zetetic.net/sqlcipher/about) to store password locally
 8. Bug reports will be worked upon with high priority
 
 ## Snapshots
