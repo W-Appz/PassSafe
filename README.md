@@ -22,12 +22,13 @@ Want to be safe online but too many passwords to remember? Do not fear, PassSafe
 3. Changes theme depending on your device (dark/light)
 4. No data collected
 5. Built-in hashing system
-6. Easy to manage and maneuver
+6. Simple interface and easy to use
 7. Actively maintained app
+8. Uses secure [256-bit AES encryption](https://www.zetetic.net/sqlcipher/design) to store password locally
 8. Bug reports will be worked upon with high priority
 
 ## Snapshots
-Snapshots of the app are available in /snapshots. Feel free to take a look!
+Snapshots of the app are available in [/snapshots](https://github.com/W-Appz/PassSafe/tree/master/snapshots). Feel free to take a look!
 
 ## How to install?
 
