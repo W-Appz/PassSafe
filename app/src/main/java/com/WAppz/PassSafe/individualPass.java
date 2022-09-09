@@ -70,17 +70,13 @@ public class individualPass extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 switch (which){
                     case DialogInterface.BUTTON_POSITIVE:
-                        Boolean checkdeletedata = vault_page.DB.deletedata(name);
-                        if (checkdeletedata) {
-                            vault_page.names.remove(name);
-                            vault_page.passes.remove(pass);
-                            vault_page.images.remove(Integer.valueOf(image));
-                            vault_page.vAdapter.notifyDataSetChanged();
-                            Toast.makeText(getApplicationContext(),"Deleted!",Toast.LENGTH_SHORT).show();
-                            onBackPressed();
-                        } else {
-                            Toast.makeText(getApplicationContext(),"Could not delete!",Toast.LENGTH_SHORT).show();
-                        }
+                        vault_page.DB.deletedata(mainpage.database,name);
+                        vault_page.names.remove(name);
+                        vault_page.passes.remove(pass);
+                        vault_page.images.remove(Integer.valueOf(image));
+                        vault_page.vAdapter.notifyDataSetChanged();
+                        Toast.makeText(getApplicationContext(),"Deleted!",Toast.LENGTH_SHORT).show();
+                        onBackPressed();
                         break;
                     case DialogInterface.BUTTON_NEGATIVE:
                         break;
@@ -112,12 +108,6 @@ public class individualPass extends AppCompatActivity {
         }
     }
     public void setData() {
-//        StringBuilder builder = new StringBuilder();
-//        if (name.length() > 25) {
-//            builder.append(name.substring(0,22));
-//            builder.append("...");
-//            name = builder.toString();
-//        }
         label.setText(name);
         password.setText(pass);
         img.setImageResource(image);

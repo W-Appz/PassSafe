@@ -74,13 +74,13 @@ public class login extends AppCompatActivity {
                         } else if (deleteAcc) {
                             boolean delSuccess = mainpage.fileH.deleteCode(getApplicationContext());
                             if (delSuccess) {
-                                boolean delDBsuccess = vault_page.DB.deleteAll();
-                                if (delDBsuccess) {
+                                try {
+                                    vault_page.DB.deleteAll(mainpage.database);
                                     Intent i = new Intent(login.this, mainpage.class);
                                     Toast.makeText(getApplicationContext(),"Thank you for using PassSafe!",Toast.LENGTH_LONG).show();
                                     startActivity(i);
                                     finish();
-                                } else {
+                                } catch (Exception e) {
                                     Toast.makeText(getApplicationContext(),"Could not delete database!  Please try re-installing the app or contact me at Github!",Toast.LENGTH_SHORT).show();
                                 }
                             } else {

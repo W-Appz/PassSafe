@@ -26,11 +26,6 @@ import net.zetetic.database.sqlcipher.SQLiteDatabase;
 import java.io.File;
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link vault_page#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class vault_page extends Fragment implements View.OnClickListener {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -73,7 +68,7 @@ public class vault_page extends Fragment implements View.OnClickListener {
     public static vaultAdapter vAdapter;
     public static RecyclerView vaultlst;
     public static DBHelper DB;
-    public static File dbPath;
+    public static final String password = signup.code1;
     FloatingActionButton add;
 
 
@@ -81,16 +76,9 @@ public class vault_page extends Fragment implements View.OnClickListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        DB = new DBHelper();
 
-        System.loadLibrary("sqlcipher");
-        dbPath = getContext().getDatabasePath(DBHelper.dbName);
-        SQLiteDatabase DBfile = SQLiteDatabase.openOrCreateDatabase(dbPath,signup.code1,null,null,null);
-
-        DB = new DBHelper(getContext());
-        try {
-            DB.onCreate(DBfile);
-        } catch (Exception e) {}
-        Cursor res = DB.getdata();
+        Cursor res = DB.getdata(mainpage.database);
         if (res.getCount() != 0) {
             while (res.moveToNext()) {
                 names.add(res.getString(0));
@@ -145,8 +133,9 @@ public class vault_page extends Fragment implements View.OnClickListener {
         getActivity().finish();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void displayListASC() {
-        Cursor res = DB.sortdbASCName();
+        Cursor res = DB.sortdbASCName(mainpage.database);
         names = new ArrayList<>();
         passes = new ArrayList<>();
         images = new ArrayList<>();
@@ -162,8 +151,9 @@ public class vault_page extends Fragment implements View.OnClickListener {
         vAdapter = new vaultAdapter(getContext(), names, passes, images,dates);
         vaultlst.setAdapter(vAdapter);
     }
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void displayListDESC() {
-        Cursor res = DB.sortdbDESCName();
+        Cursor res = DB.sortdbDESCName(mainpage.database);
         names = new ArrayList<>();
         passes = new ArrayList<>();
         images = new ArrayList<>();
@@ -180,8 +170,9 @@ public class vault_page extends Fragment implements View.OnClickListener {
         vaultlst.setAdapter(vAdapter);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void displayListDateASC(){
-        Cursor res = DB.sortdbASCSeq();
+        Cursor res = DB.sortdbASCSeq(mainpage.database);
         names = new ArrayList<>();
         passes = new ArrayList<>();
         images = new ArrayList<>();
@@ -198,8 +189,9 @@ public class vault_page extends Fragment implements View.OnClickListener {
         vaultlst.setAdapter(vAdapter);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void displayListDateDESC(){
-        Cursor res = DB.sortdbDESCSeq();
+        Cursor res = DB.sortdbDESCSeq(mainpage.database);
         names = new ArrayList<>();
         passes = new ArrayList<>();
         images = new ArrayList<>();

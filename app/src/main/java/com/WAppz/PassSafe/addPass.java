@@ -114,7 +114,7 @@ public class addPass extends AppCompatActivity {
             } else {
                 n = pass_name.getText().toString();
                 p = password.getText().toString();
-                Cursor res = vault_page.DB.getdata();
+                Cursor res = vault_page.DB.getdata(mainpage.database);
                 boolean use = false;
                 if (res.getCount() > 0) {
                     while (res.moveToNext()){
@@ -132,11 +132,11 @@ public class addPass extends AppCompatActivity {
                     vault_page.images.add(t);
                     vault_page.dates.add(date);
                     Integer sequence = vault_page.vAdapter.getItemCount() + 1;
-                    Boolean checkinsertdata = vault_page.DB.insertdata(n,p,t,sequence,date);
-                    if (checkinsertdata) {
+                    try {
+                        vault_page.DB.insertdata(mainpage.database,n,p,t,sequence,date);
                         vault_page.vAdapter.notifyItemChanged(vault_page.images.size() - 1);
                         Toast.makeText(this, "Added " + n, Toast.LENGTH_SHORT).show();
-                    } else {
+                    } catch (Exception e) {
                         Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show();
                     }
                     onBackPressed();

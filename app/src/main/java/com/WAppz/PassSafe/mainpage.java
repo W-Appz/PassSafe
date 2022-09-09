@@ -14,6 +14,10 @@ import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+
+import net.zetetic.database.sqlcipher.SQLiteDatabase;
+
+import java.io.File;
 import java.util.ArrayList;
 
 @RequiresApi(api = Build.VERSION_CODES.M)
@@ -22,6 +26,7 @@ public class mainpage<started> extends AppCompatActivity {
     private DrawerLayout dLayout;
     private ActionBarDrawerToggle mToggle;
     private NavigationView navView;
+    public static SQLiteDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +41,7 @@ public class mainpage<started> extends AppCompatActivity {
         setTheme(R.style.Theme_IkesPasswordVault);
         setContentView(R.layout.activity_mainpage);
         fileH = new fileHandler(getApplicationContext());
+
         if (!(getIntent().hasExtra("return"))) {
             if (fileH.fileExist("code.txt")) {
                 Intent intent = new Intent(this, login.class);
@@ -47,6 +53,9 @@ public class mainpage<started> extends AppCompatActivity {
             }
             finish();
         }
+
+        database = InitializeSQLCipher();
+
         dLayout = (DrawerLayout) findViewById(R.id.dLayout);
         navView = (NavigationView) findViewById(R.id.navView);
         mToggle = new ActionBarDrawerToggle(this,dLayout,R.string.open,R.string.close);
@@ -68,6 +77,15 @@ public class mainpage<started> extends AppCompatActivity {
                 tab.setText("Hash");
             }
         }).attach();
+    }
+    private SQLiteDatabase InitializeSQLCipher() {
+        System.loadLibrary("sqlcipher");
+        File databaseFile = getDatabasePath("vaultdata.db");
+        SQLiteDatabase database = SQLiteDatabase.openOrCreateDatabase(databaseFile, "helo", null, null, null);
+        try {
+            database.execSQL("CREATE TABLE VaultDetails(Name TEXT Primary Key, Password TEXT, Type INTEGER, Sequence INTEGER, Date TEXT)");
+        } catch (Exception e) {}
+        return database;
     }
 
     @Override
