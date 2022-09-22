@@ -35,7 +35,7 @@ Snapshots of the app are available in [/snapshots](https://github.com/W-Appz/Pas
 ### Download APK here
 <a href="https://github.com/W-Appz/PassSafe/releases/latest"><img src="github.png" alt="Download from Github" width="200"/></a> <br>
 ### Google Play
-<a href="https://play.google.com/store/apps/details?id=com.WAppz.PassSafe"><img src="googleplaybutton.png" alt="Download from Google Play" width="200"/></a> <br>
+<a href="https://play.google.com/store/apps/details?id=com.WAppz.PassSafe"><img src="googleplay.png" alt="Download from Google Play" width="200"/></a> <br>
 ### App Store
 <i> Coming Soon! </i>
 
